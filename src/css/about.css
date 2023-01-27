@@ -7,6 +7,12 @@
     padding: 30px;
     text-align: justify;
 }
+.floating_text_left{
+    float: left;
+}
+.floating_text_right{
+    float: right;
+}
 .about_sec>h3{
     margin: 10px 0;
 }
@@ -20,3 +26,13 @@
 .left_img{
     margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+    .floating_text_left,.floating_text_right{
+        float: none;
+    }
+    .img_with_text{
+        max-width: calc(100vw - 20px);
+        margin: 10px;
+    }
+  }
