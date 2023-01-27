@@ -184,6 +184,12 @@ background-repeat: no-repeat;
 background-size: cover;
 background-color: rgba(200, 97, 0, 0.5);
 background-blend-mode: multiply;
+text-align: center;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+color: #fff;
 }
 footer {
     display: flex;
