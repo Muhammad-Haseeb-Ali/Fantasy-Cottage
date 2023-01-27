@@ -2,3 +2,21 @@
     background-image: url("../../images/about.jpg");
     background-position: 50% 20%;
 }
+.about_sec{
+    width: calc(100% - 60px);
+    padding: 30px;
+    text-align: justify;
+}
+.about_sec>h3{
+    margin: 10px 0;
+}
+.img_with_text{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.right_img{
+    margin-left: 20px;
+}
+.left_img{
+    margin-right: 20px;
+}

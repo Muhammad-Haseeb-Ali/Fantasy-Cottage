@@ -347,8 +347,10 @@ footer a:hover::before {
     }
     header>div:first-child{
         height: auto;
+        width: calc(100% - 20px);
         align-items: center;
         text-align: center;
+        margin: 0 10px;
     }
     header>div:last-child>img:first-child{
         position: absolute;
