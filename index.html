@@ -67,8 +67,51 @@
             <button class="btn theme_btn">More</button>
         </div>
     </section>
-    <section class="team"></section>
-    <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.4600192591647!2d73.05749351499809!3d33.7229188806968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa0a1ebe6ab%3A0x50ebca2b04441f4e!2sShakespeare&#39;s%20Lounge!5e0!3m2!1sen!2s!4v1674802372361!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <section class="team_member">
+
+              <h2>Our Team Members</h2>
+        <div class="team">
+
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="member_image">
+            <h3>Paul Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consecteturamet consecteturamet Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</p>
+          </div>
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="member_image">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consecteturamet consecteturamet Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</p>
+          </div>
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="member_image">
+            <h3>Paul Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consecteturamet consecteturamet Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</p>
+          </div>
+          <div class="member">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="member_image">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consecteturamet consecteturamet Laboriosam voluptatum fuga iure. Est, dicta voluptatum.</p>
+          </div>
+        </div>
+    </section>
+
+    <div class="testimonial-container">
+      <div class="progress-bar"></div>
+      <div class="fas fa-quote-left fa-quote"></div>
+      <div class="fas fa-quote-right fa-quote"></div>
+      <p class="testimonial">
+        Since applying the Coppercoat system I have been delighted with its performance. There's been much less weed build-up than in previous years, and what did appear has been easy to remove. It’s quite a high initial outlay, but a lot of money will be saved over the years and it seems to work as a very effective anti-fouling with the bonus of offering good hull protection.
+      </p>
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="user" class="user-image">
+        <div class="user-details">
+          <h4 class="username">Mia Asano</h4>
+          <p class="role">5 Stars</p>
+        </div>
+      </div>
+    </div>
+    <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4472.366370488226!2d-4.142168!3d55.91152400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488842f55ab0aed3%3A0x134edbdffc68472e!2s2%20Stepps%20Rd%2C%20Kirkintilloch%2C%20Glasgow%20G66%205DH%2C%20UK!5e0!3m2!1sen!2sus!4v1674816402233!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <section class="footer">
           <div class="brand">
@@ -121,5 +164,86 @@
         </section>
       </footer>
 
+      <script>
+        const testimonialsContainer = document.querySelector(".testimonials-container");
+const testimonial = document.querySelector(".testimonial");
+const userImage = document.querySelector(".user-image");
+const username = document.querySelector(".username");
+const role = document.querySelector(".role");
+
+const testimonials = [
+  {
+    name: "Miyah Myles",
+    review: "5 stars",
+    photo:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6",
+    text:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam."
+  },
+  {
+    name: "June Cha",
+    review: "5 stars",
+    photo: "https://randomuser.me/api/portraits/women/44.jpg",
+    text:
+      "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non."
+  },
+  {
+    name: "Iida Niskanen",
+    review: "5 stars",
+    photo: "https://randomuser.me/api/portraits/women/68.jpg",
+    text:
+      "This guy is a hard worker. Communication was also very good with him and he was very responsive all the time, something not easy to find in many freelancers. We'll definitely repeat with him."
+  },
+  {
+    name: "Renee Sims",
+    review: "5 stars",
+    photo: "https://randomuser.me/api/portraits/women/65.jpg",
+    text:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam."
+  },
+  {
+    name: "Jonathan Nunfiez",
+    review: "5 stars",
+    photo: "https://randomuser.me/api/portraits/men/43.jpg",
+    text:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam."
+  },
+  {
+    name: "Sasha Ho",
+    review: "5 stars",
+    photo:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
+    text:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam."
+  },
+  {
+    name: "Veeti Seppanen",
+    review: "5 stars",
+    photo: "https://randomuser.me/api/portraits/men/97.jpg",
+    text:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam."
+  }
+];
+
+let idx = 1;
+
+function updateTestimonial() {
+  const { name, review, photo, text } = testimonials[idx];
+
+  testimonial.innerHTML = text;
+  userImage.src = photo;
+  username.innerHTML = name;
+  role.innerHTML = review;
+
+  idx++;
+
+  if (idx > testimonials.length - 1) {
+    idx = 0;
+  }
+}
+
+setInterval(updateTestimonial, 10000);
+
+      </script>
 </body>
 </html>
