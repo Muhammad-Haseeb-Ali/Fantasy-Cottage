@@ -2,3 +2,55 @@
     background-image: url("../../images/open.jpg");
     background-position: 50% 40%;
 }
+
+
+
+.opening-hours-container{
+display:flex;
+flex-flow: column;
+justify-content:center;
+align-items:center;
+margin: 20px 0;
+
+}
+.opening-hours-container>h1{
+    margin-bottom: 50px;
+}
+.card{
+min-width: 375px;
+
+display: grid;
+grid-template-columns:250px auto;
+
+padding: 32px;
+border-radius:8px;
+
+font-family: 'circular Std Book', sans-serif;
+font-size: 18px;
+
+color: #121212;
+box-shadow:0 12px 84px rgba(189,196,214,.5);
+
+user-select:none;
+cursor: pointer;
+}
+.card#smart-card,.card#smart-card .content{
+justify-content:center;
+}
+
+.card svg {
+height:24px;
+}
+
+.card .feather-calender {
+margin-top: -3px;
+}
+
+.card .content {
+display: flex;
+align-items: center;
+}
+
+.card .content span{
+margin-left:8px;
+}
